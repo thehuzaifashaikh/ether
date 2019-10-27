@@ -6,8 +6,8 @@ INCLUDE_DIR := include
 LIB_DIR := lib
 SRC_FILES := $(wildcard $(SRC_DIR)/*.c)
 OBJ_FILES := $(patsubst $(SRC_DIR)/%.c,$(OBJ_DIR)/%.o,$(SRC_FILES))
-LDFLAGS := /usr/lib/x86_64-linux-gnu/libglfw.so -lGL -lX11 -lpthread
-CFLAGS := -Wall -Wextra -Wshadow -pedantic -std=c99 -m64 -g -O0 -I $(INCLUDE_DIR)
+LDFLAGS := 
+CFLAGS := -Wall -Wextra -Wshadow -pedantic -std=c99 -m64 -g -O0
 
 ifeq ($(OS), Windows_NT)
 	PROJECT := $(PROJECT).exe

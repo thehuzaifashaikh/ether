@@ -16,4 +16,6 @@
 void* xmalloc(size_t p_size);
 void* xrealloc(void* p_ptr, size_t p_bytes);
 
-#endif
+char* read_file(const char* p_path);
+
+#endif // COMMON_H
